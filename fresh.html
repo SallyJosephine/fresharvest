@@ -19,6 +19,41 @@
             object-fit: cover; 
             z-index: -1;
         }
+        #top-section{
+            
+            position:fixed;
+            top: 0;
+            width: 100%;
+            height: 40px;
+            background-color: #4CAF50;
+            overflow: hidden;
+            white-space: nowrap;
+            color: white;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            }
+
+            #moving-text {
+                
+                animation: moveText 15s linear infinite;}
+
+        
+                @keyframes moveText {
+    0% {
+        transform: translateX(300%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.header{
+    margin-top:70px ;
+    height:55px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
     </style>
     <script>
         
@@ -28,11 +63,32 @@
      </script>
 </head>
 <body>
+<div>
+
+   
     <video id="video-background" autoplay muted loop>
         <source src="images/production_id_4121739 (2160p).mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
+    <div
+         id="top-section" >
+         <span id="moving-text" style=" font-family: 'Protest Riot', sans-serif;" > DISCOVER FRESHNESS AT FRESHAVEST GROCERIES</span>   
+ 
 
+    </div>
+  
+</div>
+
+    <div class="header">
+        <div class="left"> 
+            <img src="images/—Pngtree—green house logo tree house_3634065.png" alt="greenhouse"></div>
+        <div class="middle">
+            <input class="search-bar" type="text" placeholder="Search">
+        </div>
+        <div class="right">right section</div>
+        
+
+    </div>
     
 </body>
 </html>
